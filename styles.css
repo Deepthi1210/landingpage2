@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://cdn.pixabay.com/photo/2017/09/18/16/53/burger-2762371_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    padding: 40px 120px;
+}
+.logo h3{
+    width: 135px;
+    color: #fff;
+}
+.links{
+    flex: 1;
+}
+.links ul{
+    margin-left: 50px;
+    display: inline;
+
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
+.links .btn{
+    float: right;
+}
+.banner-title{
+    margin: 80px 130px;
+    color: #fff;
+}
+.banner-title h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.banner-title h1 span{
+    color: yellow;
+}
+.vertical-bar{
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.search-icon{
+    height: 60%;
+    width: 80px;
+}
+.search-icon .fas{
+    margin: 45px 20px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.search-icon .fas{
+    margin: 15px 20px;
+    display: block;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.social-icon{
+    height: 35%;
+    width: 80px;
+    background: yellow;
+    text-align: center;
+    padding-top: 25%;
+    bottom: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.social-icon .fab{
+    margin: 15px 23px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.notifications{
+    display: flex;
+    width: 400px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: yellow;
+    align-items: center;
+}
+.content{
+    flex-basis: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+.notification-img{
+    flex-basis: 50%;
+}
+.notification-img img{
+    width: 100%;
+}
+.content a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+ margin: 0 10px;
+}
+.content p{
+    text-align: right;
+    margin-top: 10px;
+}
